@@ -36,7 +36,12 @@ const routes = [
         return false
       }
     }, */
-  }
+  },
+  {
+    path:"/article/:id",
+    name:"ArticleID",
+    component:()=>import('../views/ArticleID.vue')
+  },
 ]
 
 const router = createRouter({
